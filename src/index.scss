@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+body
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #04010e;
+}
+
+:root
+{
+
+--page_name_tx:#640DFB;
+--page_bg:linear-gradient(1.44deg, #000000 -12.02%, #101010 3.04%, rgba(4, 3, 5, 0.85) 41.91%, #0B0013 61.91%, #1B0234 98.87%);
+
+
+}
+//!SKILLS PAGE
+
+  //*GRADIENTS
+
+$skills_div_bg:linear-gradient(268.56deg, rgba(95, 3, 255, 0.28) 1.16%, rgba(18, 1, 34, 0.28) 64.51%, rgba(0, 0, 0, 0.28) 99.19%);
+
+  //*GRADIENTS
+
+  //*SHADOWS
+
+$skills_div_react_sh: 0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(0, 179, 255, 0.51);
+$skills_div_html_sh: 0px -1px 73px rgba(53, 18, 114, 0.47), 0px 0px 75px -7px #5D00FF, inset 1px 10px 42px 9px rgba(255, 108, 25, 0.5);
+$skills_div_css_sh: 0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(21, 114, 182, 0.5);
+$skills_div_sass_sh:0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(255, 0, 122, 0.5);
+$skills_div_js_sh:0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(247, 223, 30, 0.5);
+$skills_div_node_sh:0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(131, 205, 41, 0.5);
+$skills_div_express_sh:0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(255,255,255, 0.5);
+$skills_div_java_sh: 0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(0, 116, 189, 0.34), inset 1px 10px 42px 9px rgba(234, 45, 46, 0.5);
+$skills_div_git_sh:  0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(243, 79, 41, 0.3);
+$skills_div_npm_sh:   0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 10px 42px 9px rgba(197, 55, 53, 0.3);
+
+  //*SHADOWS
+
+//!PROJECT PAGE
+
+$p_btn: #5D00FF;
+
+//!PROJECT PAGE
+
+//!SERVICES PAGE
+
+$service_div:#7203FF;
+
