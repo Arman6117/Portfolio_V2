@@ -1,62 +1,90 @@
-  //*GRADIENTS
-  $landing_page_bg:linear-gradient(192.07deg, #000000 23.53%, #08010C 39.56%, #0A000F 74.94%, #000000 117.21%, #000000 117.21%);
-  $l_page_compo_bg:linear-gradient(180deg, #5C27B8 0%, #3E1C79 26.57%, #251345 52.09%, #12022D 100%);
-  
- //*GRADIENTS
-  
-    //*SOLID COLORS
-  
-  $l_page_html_react_bg: #A28DAC;
-  $l_page_text:#CECAD0;
-  $l_page_html_tx: rgba(95, 0, 169, 0.48);
-  
-    //*SOLID COLORS
+//*GRADIENTS
+$landing_page_bg: linear-gradient(
+  192.07deg,
+  #000000 23.53%,
+  #08010c 39.56%,
+  #0a000f 74.94%,
+  #000000 117.21%,
+  #000000 117.21%
+);
+$l_page_compo_bg: linear-gradient(
+  180deg,
+  #5c27b8 0%,
+  #3e1c79 26.57%,
+  #251345 52.09%,
+  #12022d 100%
+);
+$h_btn: linear-gradient(
+  259.22deg,
+  #5d00ff 30.97%,
+  #411194 53.52%,
+  rgba(51, 0, 139, 0.6) 86.08%
+);
+//*GRADIENTS
 
-    
-  
-.home
-{
+//*SOLID COLORS
+
+$l_page_html_react_bg: #a28dac;
+$l_page_text: #cecad0;
+$l_page_html_tx: rgba(95, 0, 169, 0.48);
+
+//*SOLID COLORS
+
+.home {
   display: flex;
   width: 100%;
   height: 100vh;
   background: $landing_page_bg;
   background-size: 400% 400%;
   color: white;
-	
-  .home_text
-  {
-     display: flex;
 
-     .html
-     {
+  .home_text {
+    display: flex;
+
+    .txt {
+      color: $l_page_text;
+      font-weight: bold;
+      font-size: 4.5rem;
       position: absolute;
-      color: $l_page_html_tx;
-      font-weight: 500;
-      font-size: 1.2rem;
-     }
-      .body
-      {
-        top: 65px;
-        left: 40px;
-      }
-      .h1
-      {
-        top: 100px;
-        left: 75px;
-      }
-     
-     .txt
-     {
-       color: $l_page_text;
-       font-weight: bold;
-       font-size: 7rem;
-       position: absolute;
-     }
-     .greet
-     {
-      top: 8rem;
+      display: flex;
+    }
+    .greet {
+      top: 6rem;
       left: 6rem;
-     }
+    }
+    .name {
+      top: 13rem;
+      left: 6rem;
+
+      &:nth-child(1) {
+        color: var(--page_name_tx);
+        position: relative;
+        top: 0;
+        left: 3rem;
+      }
+    }
+    .title {
+      top: 21rem;
+      left: 6rem;
+    }
+  }
+}
+.hire_btn {
+  position: absolute;
+  width: 8rem;
+  height: 2rem;
+  background: rgba(255, 0, 0, 0);
+  border-radius: 30px;
+  border: 4px solid white;
+  top: 31rem;
+  left: 6rem;
+  color: var(--page_name_tx);
+  font-weight: 700;
+ transition: all .3s ease-in-out;
+  &:hover
+  {
+    background: $h_btn;
+    color: white;
   }
 }
 @keyframes rotate {
@@ -77,7 +105,10 @@
   width: var(--size);
   height: var(--size);
   filter: blur(calc(var(--size) / 5));
-  background-image: linear-gradient(hsla(265, 100%, 15%, 0.323), hsla(271, 100%, 18%, 0.317));
+  background-image: linear-gradient(
+    hsla(265, 100%, 15%, 0.323),
+    hsla(271, 100%, 18%, 0.317)
+  );
   animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }

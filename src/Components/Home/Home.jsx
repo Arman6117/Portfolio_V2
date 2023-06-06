@@ -6,10 +6,12 @@ const Home = () => {
       <div className="home">
       <div className='gradient'></div>
         <div className="home_text">
-        <span className='html body'>&lt;body&gt;</span>
-        <span className='html h1'>&lt;h1&gt;</span>
+      
           <span className='txt greet'>Hello</span>
+          <span className='txt name'><span className='txt'>I'm  <span className='txt name'> Arman</span></span></span>
+          <span className='txt title'>Web Developer</span>
         </div>
+        <button className='hire_btn'>Hire Me</button>
       </div>
     </>
   )
