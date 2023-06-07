@@ -1,0 +1,37 @@
+.page_txt
+{
+  color: white;
+  font-weight: bold;
+  line-height: 2rem;
+ 
+}
+.title
+{
+  color:var(--page_name_tx) ;
+  position: absolute;
+  top: 8rem;
+  font-size: 3rem;
+  font-weight: 600;
+  left: 6rem;
+}
+.desc-1
+{
+  position: absolute;
+  top: 11.5rem;
+  font-size:1rem;
+  left: 6rem;
+}
+.desc-2
+{
+  @extend .desc-1;
+  top: 14rem;
+}
+.line
+{
+  width: 15rem;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 17rem;
+  left: 6rem;
+}
