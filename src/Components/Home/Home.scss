@@ -23,8 +23,6 @@ $h_btn: linear-gradient(
 //*GRADIENTS
 
 //*SOLID COLORS
-
-$l_page_html_react_bg: #a28dac;
 $l_page_text: #cecad0;
 $l_page_html_tx: rgba(95, 0, 169, 0.48);
 
@@ -44,16 +42,16 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
     .txt {
       color: $l_page_text;
       font-weight: bold;
-      font-size: 4.5rem;
+      font-size: 5rem;
       position: absolute;
       display: flex;
     }
     .greet {
-      top: 6rem;
+      top: 9.5rem;
       left: 6rem;
     }
     .name {
-      top: 13rem;
+      top: 15rem;
       left: 6rem;
 
       &:nth-child(1) {
@@ -80,11 +78,45 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
   left: 6rem;
   color: var(--page_name_tx);
   font-weight: 700;
- transition: all .3s ease-in-out;
-  &:hover
-  {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
     background: $h_btn;
     color: white;
+  }
+}
+.home_compo {
+  width: 100px;
+  height: 100px;
+  background: $l_page_compo_bg;
+  border-radius: 50%;
+  position: absolute;
+  top: 8rem;
+  left: 40rem;
+  opacity: 0.5;
+  .react {
+    transform: scale(0.9);
+  }
+}
+.home_compo2 {
+  @extend .home_compo;
+  top: 16rem;
+  left: 50rem;
+
+  .html {
+    transform: scale(0.7);
+  }
+}
+.social {
+  position: absolute;
+  top: 25rem;
+  display: flex;
+  flex-direction: column;
+  left: 65rem;
+  gap: 10px;
+  .icon {
+    cursor: pointer;
+    transform: scale(0.7);
   }
 }
 @keyframes rotate {

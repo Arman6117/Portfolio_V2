@@ -17,6 +17,7 @@ $c_btn_hvr: linear-gradient(
   height: 3.5rem;
   position: fixed;
  z-index: 1;
+ backdrop-filter: blur(12px);
   .nav-cnt {
     display: flex;
 
