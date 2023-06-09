@@ -1,4 +1,9 @@
-$skills_div_bg:  linear-gradient(185.5deg, #5F03FF -5.26%, #120122 76.39%, #000000 121.1%);
+$skills_div_bg: linear-gradient(
+  185.5deg,
+  #5f03ff -5.26%,
+  #120122 76.39%,
+  #000000 121.1%
+);
 
 $skills_div_react_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   3px -4px 78px -9px #5d00ff, inset 1px 10px 42px 9px rgba(0, 179, 255, 0.51);
@@ -6,14 +11,21 @@ $skills_div_html_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   0px 0px 75px -7px #5d00ff, inset 1px 10px 42px 9px rgba(255, 108, 25, 0.5);
 $skills_div_css_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   3px -4px 78px -9px #5d00ff, inset 1px 10px 42px 9px rgba(21, 114, 182, 0.5);
-$skills_div_sass_sh: 0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 0px 2px 22px 5px rgba(255, 0, 122, 0.5);
+$skills_div_sass_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  3px -4px 78px -9px #5d00ff, inset 0px 2px 22px 5px rgba(255, 0, 122, 0.5);
 $skills_div_js_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   3px -4px 78px -9px #5d00ff, inset 1px 10px 42px 9px rgba(247, 223, 30, 0.5);
-$skills_div_node_sh: 0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 8px 32px 6px rgba(131, 205, 41, 0.5);
-$skills_div_express_sh:  0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 0px 4px 17px 5px rgba(255, 255, 255, 0.5);
-$skills_div_java_sh:  0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 2px 14px 7px rgba(0, 116, 189, 0.34), inset 1px 6px 33px 8px rgba(234, 45, 46, 0.5);
-$skills_div_git_sh:0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 0px 4px 13px 6px rgba(243, 79, 41, 0.44);
-$skills_div_npm_sh:0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D00FF, inset 1px 3px 17px 9px rgba(197, 55, 53, 0.3);
+$skills_div_node_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  3px -4px 78px -9px #5d00ff, inset 1px 8px 32px 6px rgba(131, 205, 41, 0.5);
+$skills_div_express_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  3px -4px 78px -9px #5d00ff, inset 0px 4px 17px 5px rgba(255, 255, 255, 0.5);
+$skills_div_java_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  3px -4px 78px -9px #5d00ff, inset 1px 2px 14px 7px rgba(0, 116, 189, 0.34),
+  inset 1px 6px 33px 8px rgba(234, 45, 46, 0.5);
+$skills_div_git_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  3px -4px 78px -9px #5d00ff, inset 0px 4px 13px 6px rgba(243, 79, 41, 0.44);
+$skills_div_npm_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  3px -4px 78px -9px #5d00ff, inset 1px 3px 17px 9px rgba(197, 55, 53, 0.3);
 
 //*SHADOWS
 
@@ -31,177 +43,135 @@ $skills_div_npm_sh:0px -1px 73px rgba(53, 18, 114, 0.47), 3px -4px 78px -9px #5D
   transform-style: preserve-3d;
   cursor: pointer;
   &:hover {
- opacity: 1;
+    opacity: 1;
     box-shadow: $skills_div_react_sh;
-
   }
 }
 .svg {
   transform: scale(0.7);
 }
-.HTML
-{
-    @extend .React;
-    top: 7rem;
-    left: 50rem;
-    width: 110px;
-    height: 110px;
+.HTML {
+  @extend .React;
+  top: 8rem;
+  left: 55rem;
+  width: 110px;
+  height: 110px;
 
-    &:hover
-    {
-        opacity: 1;
-        box-shadow: $skills_div_html_sh;
-        
-    }
-    .svg
-    {
-        transform: scale(0.6);
-    }
+  &:hover {
+    opacity: 1;
+    box-shadow: $skills_div_html_sh;
+  }
+  .svg {
+    transform: scale(0.6);
+  }
 }
-.CSS
-{
-    @extend .React;
-    top: 21rem;
-    left: 49rem;
-    width: 110px;
-    height: 110px;
-  
-    &:hover
-    {
-        opacity: 1;
-        box-shadow: $skills_div_css_sh;
-    }
-    .svg
-    {
-        transform: scale(0.6);
-    }
-}
-.JS
-{
-    @extend .React;
- 
-    width: 110px;
-    height: 110px;
-    top: 19rem;
-    left: 19rem;
-    &:hover
-    {
-        // opacity: 1;
-        box-shadow: $skills_div_js_sh;
-    }
-    .svg
-    {
-        position: relative;
-        top: 1.2rem;
-        left: 10px;
-       
-    }
-}
-.Node
-{
-    @extend .React;
-    width: 80px;
-    height: 80px;
-    top: 19rem;
-    left: 3rem;
-    &:hover
-    {
-        // opacity: 1;
-        box-shadow: $skills_div_node_sh;
-    }
-    .svg
-    {
-        transform: scale(0.7);
-    }
-}
-.Ex
-{
-    @extend .React;
-    width: 65px;
-    height: 65px;
-    top: 32rem;
-    left: 6rem;
+.CSS {
+  @extend .React;
+  top: 21rem;
+  left: 49rem;
+  width: 110px;
+  height: 110px;
 
-    &:hover
-    {
-        box-shadow: $skills_div_express_sh;
-    }
-    .svg
-    {
-        transform: scale(0.6);
-    }
+  &:hover {
+    opacity: 1;
+    box-shadow: $skills_div_css_sh;
+  }
+  .svg {
+    transform: scale(0.6);
+  }
 }
-.SASS
-{
-    @extend .React;
-    width: 65px;
-    height: 65px;
-    top: 14rem;
-    left: 37rem;
-    &:hover
-    {
-        box-shadow: $skills_div_sass_sh;
-    }
+.JS {
+  @extend .React;
+
+  width: 110px;
+  height: 110px;
+  top: 19rem;
+  left: 19rem;
+  &:hover {
+    // opacity: 1;
+    box-shadow: $skills_div_js_sh;
+  }
+  .svg {
+    position: relative;
+    top: 1.2rem;
+    left: 10px;
+  }
 }
-.Git
-{
-    @extend .React;
-    width: 50px;
-    height: 50px;
-    top: 25rem;
-    left: 35rem;
-    &:hover
-    {
-        box-shadow: $skills_div_git_sh;
-    }
-    .svg
-    {
-        transform: scale(0.6);
-    }
+.Node {
+  @extend .React;
+  width: 80px;
+  height: 80px;
+  top: 19rem;
+  left: 3rem;
+  &:hover {
+    // opacity: 1;
+    box-shadow: $skills_div_node_sh;
+  }
+  .svg {
+    transform: scale(0.7);
+  }
 }
-.Java
-{
-    @extend .React;
-    width: 75px;
-    height: 75px;
-    top: 32rem;
-    left: 25rem;
-    &:hover
-    {
-        box-shadow: $skills_div_java_sh;
-    }
-    .svg
-    {
-        transform: scale(0.6);
-    }
+.Ex {
+  @extend .React;
+  width: 65px;
+  height: 65px;
+  top: 32rem;
+  left: 6rem;
+
+  &:hover {
+    box-shadow: $skills_div_express_sh;
+  }
+  .svg {
+    transform: scale(0.6);
+  }
 }
-.NPM
-{
-    @extend .React;
-    width: 55px;
-    height: 55px;
-    top: 32rem;
-    left: 45rem;
-    &:hover
-    {
-        box-shadow: $skills_div_npm_sh;
-    }
-    .svg
-    {
-        transform: scale(0.6);
-    }
+.SASS {
+  @extend .React;
+  width: 65px;
+  height: 65px;
+  top: 14rem;
+  left: 40rem;
+  &:hover {
+    box-shadow: $skills_div_sass_sh;
+  }
 }
-@keyframes opacity {
-    0%
-    {
-        opacity: 0.2;
-    }
-    50%
-    {
-        opacity: 0.5;
-    }
-    100%
-    {
-        opacity: 1;
-    }
+.Git {
+  @extend .React;
+  width: 50px;
+  height: 50px;
+  top: 25rem;
+  left: 35rem;
+  &:hover {
+    box-shadow: $skills_div_git_sh;
+  }
+  .svg {
+    transform: scale(0.6);
+  }
 }
+.Java {
+  @extend .React;
+  width: 75px;
+  height: 75px;
+  top: 32rem;
+  left: 25rem;
+  &:hover {
+    box-shadow: $skills_div_java_sh;
+  }
+  .svg {
+    transform: scale(0.6);
+  }
+}
+.NPM {
+  @extend .React;
+  width: 55px;
+  height: 55px;
+  top: 32rem;
+  left: 45rem;
+  &:hover {
+    box-shadow: $skills_div_npm_sh;
+  }
+  .svg {
+    transform: scale(0.6);
+  }
+}
+
