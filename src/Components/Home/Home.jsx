@@ -18,7 +18,7 @@ const Home = () => {
               I'm <span className="txt name"> Arman</span>
             </span>
           </span>
-          <span className="txt title">Web Developer</span>
+          <span className="txt title">Web <span className="txt subTxt">Developer</span></span>
         </div>
         <button className="hire_btn">Hire Me</button>
         <div className="home_compo">

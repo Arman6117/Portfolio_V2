@@ -1,5 +1,36 @@
-
-
+$skills_div_bg: linear-gradient(
+  185.5deg,
+  #5f03ff -5.26%,
+  #120122 76.39%,
+  #000000 121.1%
+);
+  
+$skills_div_react_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  3px -4px 78px -9px #5d00ff, inset 1px 10px 42px 9px rgba(0, 179, 255, 0.51);
+  
+.React {
+  width: 110px;
+  height: 110px;
+  background: $skills_div_bg;
+  position: absolute;
+  top: 5rem;
+  left: 27rem;
+  border-radius: 50%;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    box-shadow: $skills_div_react_sh;
+   
+    
+  }
+}
+.svg {
+  transform: scale(0.6);
+}
 
 .skills-info {
   width: 180px;
@@ -9,8 +40,11 @@
   opacity: 1;
   position: absolute;
   text-align: center;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
   z-index: 1;
+  top: 2rem;
+  left: 14rem;
+
   &::before {
     display: block;
     content: "";
@@ -58,55 +92,11 @@
     top: 119px;
     left: 186px;
   }
-
-
 }
 .skill_title {
   font-size: 15px;
 }
-.knowledge {
-  width: 45px;
-  height: 45px;
-  background: rgba(234, 86, 0, 0);
-  border-radius: 50%;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: none;
 
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-  }
-  &::after {
-    content: "";
-    background: #fdfdfd;
-    width: 100%;
-    height: 100%;
-    // transition: all 5s ease-in-out;
-    border-radius: 30%;
-    animation: knowledge 5s steps(100) infinite;
-    bottom: 0;
-    left: 0;
-  }
-}
-.expe {
-  @extend .knowledge;
-  left: 110px;
-
-  &::after
-  {
-    animation: expe 5s steps(100) infinite
-  }
-}
 .skill-know {
   color: #f6f4f4;
   position: absolute;
@@ -118,25 +108,61 @@
 .skill-expe {
   @extend .skill-know;
   left: 110px;
-
 }
 
+.knowledge {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: none;
 
+  .first {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  .second {
+    background: #fdfdfd;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    bottom: 0;
+    left: 0;
+    animation: react-1 5s steps(100) infinite;
+  }
+}
+.experience
+{
+  @extend .knowledge;
+  left: 110px;
+  .second
+  {
+    animation:  react-2 5s steps(100) infinite;;
+  }
+}
 
-/*
-   ex = 50
-   100-80 = 50;
-   140 - 20 = 120
-*/
-/*
-  positions
-  React = top= 2rem left = 14rem
-  HTML = top= 4rem left = 42rem
-  JS = top= 15rem left = 6rem
-  Node JS = top= 20rem left = -3rem
-  Ex JS = top= 29rem left = -3rem
-  Java  = top= 27rem left = 12rem
-  Git = top= 20rem left = 22rem
-  CSS = top= 19rem left = 35rem
-  SCSS = top= 10rem left = 27rem
-*/
+@keyframes react-1 {
+  0% {
+    transform: translateY(-90%) rotate(400deg) scale(1.6);
+  }
+  100% {
+    transform: translateY(-90%) rotate(600deg) scale(1.6);
+  }
+}
+@keyframes react-2 {
+  0% {
+    transform: translateY(-90%) rotate(400deg) scale(1.6);
+  }
+  100% {
+    transform: translateY(-90%) rotate(600deg) scale(1.6);
+  }
+}

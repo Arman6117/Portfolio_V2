@@ -64,7 +64,15 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
     .title {
       top: 21rem;
       left: 6rem;
+
+    
     }
+     .subTxt
+     {
+      position: relative;
+      left: 2rem;
+       color: var(--page_name_tx);
+     }
   }
 }
 .hire_btn {

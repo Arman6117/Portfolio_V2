@@ -1,0 +1,167 @@
+$skills_div_bg: linear-gradient(
+  185.5deg,
+  #5f03ff -5.26%,
+  #120122 76.39%,
+  #000000 121.1%
+);
+
+  $skills_div_html_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
+  0px 0px 75px -7px #5d00ff, inset 1px 10px 42px 9px rgba(255, 108, 25, 0.5);
+.HTML {
+  width: 120px;
+  height: 120px;
+  background: $skills_div_bg;
+  position: absolute;
+  top: 8rem;
+  left: 55rem;
+  border-radius: 50%;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    box-shadow: $skills_div_html_sh;
+   
+    
+  }
+}
+.svg-h {
+  transform: scale(0.6);
+}
+
+.skills-info-h {
+  width: 180px;
+  height: 100px;
+  background: #181515;
+  color: white;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transition: all .4s ease-in-out;
+  z-index: 1;
+  top: 4rem;
+  left: 42rem;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 1px;
+    position: absolute;
+    top: 121px;
+    left: 8rem;
+    border: 1px dashed #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  &::after {
+    display: block;
+    content: "";
+    width: 31px;
+    height: 1px;
+    position: absolute;
+    top: 129px;
+    left: 164px;
+    border: 1px dashed #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transform: rotate(147deg);
+  }
+
+  .ball:nth-child(1) {
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 101px;
+    left: 128px;
+  }
+  .ball:nth-child(2) {
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 119px;
+    left: 186px;
+  }
+}
+.skill_title {
+  font-size: 15px;
+}
+
+.skill-know {
+  color: #f6f4f4;
+  position: absolute;
+  top: 79px;
+  left: 29px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.skill-expe {
+  @extend .skill-know;
+  left: 110px;
+}
+
+.knowledge {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: none;
+
+  .first {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-h {
+    background: #fdfdfd;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    bottom: 0;
+    left: 0;
+    animation: html-1 5s steps(100) infinite;
+  }
+}
+.experience
+{
+  @extend .knowledge;
+  left: 110px;
+  .second-h
+  {
+    animation:  html-2 5s steps(100) infinite;;
+  }
+}
+
+@keyframes html-1 {
+  0% {
+    transform: translateY(-140%) rotate(400deg) scale(1.6);
+  }
+  100% {
+    transform: translateY(-140%) rotate(600deg) scale(1.6);
+  }
+}
+@keyframes html-2 {
+  0% {
+    transform: translateY(-140%) rotate(400deg) scale(1.6);
+  }
+  100% {
+    transform: translateY(-140%) rotate(600deg) scale(1.6);
+  }
+}
