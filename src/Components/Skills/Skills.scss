@@ -1,10 +1,18 @@
 
 .skills {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   background: var(--page_bg);
   display: flex;
   flex-direction: column;
+  // position: absolute;
+  overflow: hidden;
+  
+}
+.text
+{
   position: absolute;
+  display: flex;
+  width: 100%;
 }
 

@@ -30,12 +30,16 @@ const Skills = () => {
     <>
       <div className="skills">
         <div>
+        <div className="text">
           <PageTxt
+          
             title="Skills"
             desc1="Programming Languages/"
             desc2="Technical Expertise"
+            
           />
-          <div className="skills_div">
+          </div>
+          <div className="skills_div" style={{position:"absolute"}}>
             <ReactDiv class="React" src={React_SVG} />
             <HtmlDiv class="HTML" src={Html_SVG}  />
             <CSSDiv class="CSS" src={CSS_SVG}  />

@@ -1,20 +1,27 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import Skills from "./Components/Skills/Skills";
+import Projects from "./Components/Projects/Projects";
 function App() {
   return (
     <>
+    
       <header>
         <Navbar />
       </header>
-      <main>
+      {/* <main> */}
         <section>
           <Home />
         </section>
         <section>
           <Skills />
         </section>
-      </main>
+       <section>
+        <Projects />
+       </section>
+       
+        
+      {/* </main> */}
     </>
   );
 }
