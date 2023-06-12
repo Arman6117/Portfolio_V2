@@ -10,7 +10,7 @@ const Projects = () => {
             <Page title="Projects" desc1="Practice Projects/" desc2="Commercial Projects" />
         </div>
         <div className='project_card'>
-          <div className='card'>
+          <div className='card_div'>
            <Card />
           </div>
         </div>
