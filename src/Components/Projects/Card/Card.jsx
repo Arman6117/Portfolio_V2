@@ -46,8 +46,9 @@ const Card = () => {
             </div>
           </div>
         </div>
-        <button className="p-btn">Visit</button>
       </div>
+      {/* <button className="p-btn">Visit</button> */}
+
     </>
   );
 };

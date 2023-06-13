@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
+
 function App() {
   return (
     <>
