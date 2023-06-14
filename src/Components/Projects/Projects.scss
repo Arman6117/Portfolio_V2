@@ -7,10 +7,8 @@
 .projects_txt {
   position: relative;
   width: 100%;
-  
 }
-swiper-container
-{
+swiper-container {
   color: rgb(255, 255, 255);
   position: relative;
   top: 5rem;
@@ -26,43 +24,86 @@ swiper-slide {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+  position: relative;
+}
+.active {
+  animation: float 2s ease-in-out infinite;
 }
 swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+  background-color: rgb(157, 0, 255);
 }
 
 swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+  background-color: rgb(62, 0, 123);
 }
 
 swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
+  background-color: rgb(135, 10, 184);
 }
 
 swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+  background-color: rgb(102, 7, 211);
 }
 
 swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
+  background-color: rgb(40, 0, 99);
 }
 
 swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
+  background-color: rgb(101, 10, 180);
 }
 
 swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
+  background-color: rgb(50, 19, 99);
 }
 
 swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
+  background-color: rgb(195, 0, 255);
 }
 
 swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
+  background-color: rgb(115, 12, 218);
 }
 
 swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
+  background-color: rgb(112, 50, 127);
+}
+
+.p_btn
+{
+  outline: none;
+    border: 2px white solid;
+    width: 160px;
+    height: 35px;
+    position: relative;
+    left: 7rem;
+    top: -1rem;
+    border-radius: 30px;
+    background: #ffffff00;
+    color: rgb(106, 0, 255);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+  transition: all .2s ease-in-out;
+    &:hover
+    {
+      color: rgb(255, 255, 255);
+      background:  linear-gradient(
+        259.22deg,
+        #5d00ff 30.97%,
+        #411194 53.52%,
+        rgba(51, 0, 139, 0.6) 86.08%
+      );;
+    }
+}
+@keyframes float {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px; /* Adjust the floating distance as needed */
+  }
+  100% {
+    top: 0;
+  }
 }

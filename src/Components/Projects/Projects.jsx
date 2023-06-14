@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import SwiperCore, { Navigation } from "swiper";
 import "./Projects.scss";
 import Page from "../PageTxt/Page";
 import Card from "./Card/Card";
 import { register } from "swiper/element/bundle";
-import Taskee from "../../images/Projects/Taskee.png"
+import { ProjectData } from "./ProjectData";
+import { ReactSVG } from "react-svg";
+SwiperCore.use([Navigation]);
+
 const Projects = () => {
+
   register();
+
+  const swiperRef = useRef(null);
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.on("slideChange", handleChange);
+    }
+  }, []);
+
+  const handleChange = () => {
+    if (swiperRef.current) {
+      const activeIndex = swiperRef.current?.swiper.activeIndex;
+      const slides = document.querySelectorAll("swiper-slide");
+
+      slides.forEach((slides, index) => {
+        if (index === activeIndex) {
+          slides.classList.add("active");
+        } else {
+          slides.classList.remove("active");
+        }
+      });
+    }
+  };
 
   return (
     <>
@@ -13,19 +40,26 @@ const Projects = () => {
         <div className="projects_txt">
           <Page
             title="Projects"
-           desc1="Practice Projects/"
-           desc2="Client Projects"
+            desc1="Practice Projects/"
+            desc2="Client Projects"
           />
         </div>
-        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-    <swiper-slide><Card 
-      
-    /></swiper-slide>
-    <swiper-slide><Card img={Taskee} title="Taskee" desc=" Effortlessly manage tasks, set priorities, and track progress. Stay focused, meet deadlines, and achieve your goals with ease. Simplify your life with Taskee."/></swiper-slide>
-    <swiper-slide><Card title="Project 1" /></swiper-slide>
-    <swiper-slide><Card  title="Project 2"/></swiper-slide>
-   
-  </swiper-container>
+        <swiper-container
+          class="mySwiper"
+          effect="cards"
+          grab-cursor="true"
+          onSLideChange={handleChange}
+          ref={swiperRef}
+        >
+          {ProjectData.map((project,index)=>
+            <swiper-slide key={index}>
+              <Card {...project} />
+            </swiper-slide>
+          )}
+        </swiper-container>
+        <div>
+          <button  className="p_btn">View On GitHub</button>
+        </div>
       </div>
     </>
   );
