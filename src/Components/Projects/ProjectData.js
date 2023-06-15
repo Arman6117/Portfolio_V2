@@ -21,17 +21,5 @@ export const ProjectData =
     },
     {
         title:"Project 6"
-    },
-    {
-        title:"Project 7"
-    },
-    {
-        title:"Project 8"
-    },
-    {
-        title:"Project 9"
-    },
-    {
-        title:"Project 10"
-    },
+    }
 ];

@@ -5,7 +5,7 @@ import Page from "../PageTxt/Page";
 import Card from "./Card/Card";
 import { register } from "swiper/element/bundle";
 import { ProjectData } from "./ProjectData";
-import { ReactSVG } from "react-svg";
+
 SwiperCore.use([Navigation]);
 
 const Projects = () => {

@@ -1,0 +1,25 @@
+.s_card
+{
+    background: rgba(255, 255, 255, 0);
+    .s-content{
+        padding: 0px 146px 0px 145px;
+    }
+
+    img
+{
+    transform: scale(0.2);
+    position: absolute;
+    top: -12rem;
+    left: 0;
+}
+p
+{
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 9rem;
+    left: -126px;
+    padding: 0px 72px 1px 228px;
+    font-size: 18px;
+}
+}
