@@ -41,12 +41,7 @@ const Services = () => {
               <SCard {...data} />
              </swiper-slide>
             )}
-              {/* <swiper-slide className="swiper-slide">
-                <SCard />
-              </swiper-slide>
-              <swiper-slide>Slide 2</swiper-slide>
-              <swiper-slide>Slide 3</swiper-slide>
-              <swiper-slide>Slide 4</swiper-slide> */}
+           
             </swiper-container>
           </div>
         </div>

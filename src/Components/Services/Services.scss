@@ -1,7 +1,15 @@
 .services {
   width: 100%;
   height: 70vh;
-  background: var(--page_bg);
+  // background: var(--page_bg);
+  background:  linear-gradient(
+  192.07deg,
+  #000000 23.53%,
+  #08010c 39.56%,
+  #0a000f 74.94%,
+  #000000 117.21%,
+  #000000 117.21%
+);
   .s-txt {
     position: absolute;
     width: 100%;
@@ -19,6 +27,7 @@
     height: 85%;
     top: 37px;
     border-radius: 5px;
+    z-index: 0;
   }
   swiper-slide {
     position: relative;

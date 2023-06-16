@@ -1,0 +1,62 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(6.01deg, #000001 13.98%, #1a0037  45.92%, #20004a   90.31%);;
+  .c_content {
+    display: flex;
+
+    flex-direction: column;
+
+    .c-txt {
+      position: absolute;
+      width: 100%;
+    }
+    .inputs {
+      .sm-right {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .sm-inputs {
+        outline: none;
+        border-radius: 9px;
+        left: 42rem;
+        top: 5rem;
+        position: relative;
+        margin: 30px 0 0 0;
+        width: 23rem;
+        height: 10rem;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        background: rgba(35, 35, 35, 0.625);
+        padding: 2px 0px 0 17px;
+      }
+
+      .sm-button {
+        margin-top: 1rem;
+        width: 6rem;
+        height: 3rem;
+        border-radius: 9px;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+        top: 10rem;
+        left: 27rem;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0);
+        border: 3px solid white;
+        color: white;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: var(--page_name_tx);
+        }
+      }
+    }
+  }
+}

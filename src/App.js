@@ -3,6 +3,8 @@ import Home from "./Components/Home/Home";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
 import Services from "./Components/Services/Services";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <>
@@ -23,7 +25,11 @@ function App() {
        <section>
         <Services />
        </section> 
+       <section>
+        <Contact />
+       </section> 
       </main>
+      
     </>
   );
 }
