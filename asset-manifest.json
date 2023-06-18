@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Portfolio_V2/static/css/main.660cebff.css",
+    "main.js": "/Portfolio_V2/static/js/main.dbd93e60.js",
+    "static/media/Taskee.png": "/Portfolio_V2/static/media/Taskee.6819018793f741c5c735.png",
+    "static/media/app-development.png": "/Portfolio_V2/static/media/app-development.c9820eaa5c2a24d5b2e8.png",
+    "static/media/backend.png": "/Portfolio_V2/static/media/backend.4801a32a0a0a05e6bf55.png",
+    "static/media/front-development.png": "/Portfolio_V2/static/media/front-development.e6850e3d169ab7b7dbad.png",
+    "static/media/Ui_ux.png": "/Portfolio_V2/static/media/Ui_ux.e60170fe9da70e165c45.png",
+    "static/media/Github.svg": "/Portfolio_V2/static/media/Github.8168114d583d6454d5f301383d217893.svg",
+    "static/media/Instagram.svg": "/Portfolio_V2/static/media/Instagram.a0ff9f5bc968519dc610efd090380937.svg",
+    "static/media/react.svg": "/Portfolio_V2/static/media/react.be49c00bab3cb693cb82dc1796bd5bc7.svg",
+    "static/media/reactSk.svg": "/Portfolio_V2/static/media/reactSk.10ca575febaef49cecdea2183fd3f3b9.svg",
+    "static/media/java.svg": "/Portfolio_V2/static/media/java.a97619dc98c6dc2725160f88806b3ae6.svg",
+    "static/media/node.svg": "/Portfolio_V2/static/media/node.5e939dd888e37b1c5feb11e39849389c.svg",
+    "static/media/LinkedIn.svg": "/Portfolio_V2/static/media/LinkedIn.8c4322bf2ae3981d1572cb4c4a6fd23d.svg",
+    "static/media/express.svg": "/Portfolio_V2/static/media/express.19954af6aaf5679e8d3d4d279cce29f2.svg",
+    "static/media/javascript.svg": "/Portfolio_V2/static/media/javascript.a685196aa4de2e612624853f80613a3c.svg",
+    "static/media/css3.svg": "/Portfolio_V2/static/media/css3.3b09ac3fe497b5c8138d4e8101bc62ee.svg",
+    "static/media/git.svg": "/Portfolio_V2/static/media/git.edd16ea0c2abbdab94134ca45d672605.svg",
+    "static/media/html5.svg": "/Portfolio_V2/static/media/html5.ec5129fbd34bb10c8b1e293391b0406a.svg",
+    "index.html": "/Portfolio_V2/index.html",
+    "static/media/sass.svg": "/Portfolio_V2/static/media/sass.b267520bf925d58c4866801ec35d408d.svg",
+    "static/media/html.svg": "/Portfolio_V2/static/media/html.c91f6c872d424266002f675ec25323af.svg",
+    "static/media/npm.svg": "/Portfolio_V2/static/media/npm.6200546b4fadc8853083a7f58e2cb2ae.svg",
+    "main.660cebff.css.map": "/Portfolio_V2/static/css/main.660cebff.css.map",
+    "main.dbd93e60.js.map": "/Portfolio_V2/static/js/main.dbd93e60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.660cebff.css",
+    "static/js/main.dbd93e60.js"
+  ]
+}
