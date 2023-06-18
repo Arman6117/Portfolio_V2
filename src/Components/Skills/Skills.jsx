@@ -28,7 +28,7 @@ import SASS_SVG from "../../images/sass.svg";
 const Skills = () => {
   return (
     <>
-      <div className="skills">
+      <div className="skills" id="Skills">
         <div>
         <div className="text">
           <PageTxt

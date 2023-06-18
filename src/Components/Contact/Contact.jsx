@@ -26,7 +26,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="contact">
+      <div className="contact" id="Contact">
         <div className="c_content">
           <div className="c-txt">
             <Page

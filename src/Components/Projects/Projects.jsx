@@ -9,7 +9,6 @@ import { ProjectData } from "./ProjectData";
 SwiperCore.use([Navigation]);
 
 const Projects = () => {
-
   register();
 
   const swiperRef = useRef(null);
@@ -36,7 +35,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="projects">
+      <div className="projects" id="Projects">
         <div className="projects_txt">
           <Page
             title="Projects"
@@ -51,14 +50,16 @@ const Projects = () => {
           onSLideChange={handleChange}
           ref={swiperRef}
         >
-          {ProjectData.map((project,index)=>
+          {ProjectData.map((project, index) => (
             <swiper-slide key={index}>
               <Card {...project} />
             </swiper-slide>
-          )}
+          ))}
         </swiper-container>
         <div>
-          <button  className="p_btn">View On GitHub</button>
+          <a href="https://github.com/Arman6117" target="_blank" >
+            <button className="p_btn">View On GitHub</button>
+          </a>
         </div>
       </div>
     </>

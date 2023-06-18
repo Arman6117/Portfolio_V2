@@ -5,19 +5,28 @@ import SwiperCore, { Navigation } from "swiper";
 import { register } from "swiper/element/bundle";
 import SCard from "./S_Card/S_Card";
 import { S_CardData } from "./S_Card/S_CardData";
+import { Link } from "react-scroll/modules";
 SwiperCore.use([Navigation]);
 const Services = () => {
   register();
   return (
     <>
-      <div className="services">
+      <div className="services" id="Services">
         <div className="s-txt">
           <Page
             title="Services"
             desc1="Web-Dev Services /"
             desc2="Web-Design Services"
           />
-            <button className="hire_btn">Hire Me</button>
+             <Link
+          spy={true}
+          to="Contact"
+          smooth={true}
+          activeClass="activeClass"
+          style={{ cursor: "pointer" }}
+        >
+          <button className="hire_btn">Hire Me</button>
+        </Link>
           <div className="s-card">
             <swiper-container
               style={{
