@@ -14,7 +14,7 @@ $c_btn_hvr: linear-gradient(
 .navbar {
   display: flex;
   width: 100%;
-  height: 3.5rem;
+  height: 3.5em;
   position: fixed;
   z-index: 1;
   backdrop-filter: blur(12px);
@@ -25,17 +25,17 @@ $c_btn_hvr: linear-gradient(
       color: white;
       font-weight: bold;
       position: relative;
-      top: 0.6rem;
+      top: 0.4em;
       left: 3rem;
       font-size: 1.5rem;
       cursor: pointer;
     }
-
+   
     .nav-link {
       color: white;
       position: relative;
       left: 12rem;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: bold;
       top: 5px;
 
@@ -85,5 +85,24 @@ $c_btn_hvr: linear-gradient(
   &:hover {
     background: $c_btn_hvr;
     color: var(--page_name_tx);
+  }
+}
+
+.t-btn {
+  position: absolute;
+  left: -19rem;
+  // visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  
+}
+//!MEDIA QUERIES 
+@media screen and (max-width: 481px)  {
+  .nav-txt
+  {
+
+  }
+  .t-btn{
+   opacity: 1;
   }
 }

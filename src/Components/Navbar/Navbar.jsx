@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll/modules";
 import "./Navbar.scss";
+import Toggle from "./Toggle/Toggle";
 const Navbar = () => {
   return (
     <>
@@ -8,6 +9,8 @@ const Navbar = () => {
         <div className="nav-cnt">
           <div className="nav-txt">Arman Patel</div>
           <div className="nav-link">
+          <div className="t-btn"><Toggle/></div>
+          {/* <div className="collapse"></div> */}
             <ul>
               <Link
                 spy={true}

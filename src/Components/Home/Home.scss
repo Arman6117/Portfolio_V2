@@ -210,3 +210,16 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
    opacity: 0;
   }
 }
+
+//!MEDIA QUERIES 
+@media screen and (max-width:481px) {
+  .home{
+    width: 68rem;
+    height: 40rem;
+
+    .social
+    {
+      left: 62rem;
+    }
+  }
+}
