@@ -40,7 +40,7 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
     #0a000f 74.94%,
     #000000 117.21%,
     #000000 117.21%
-  );;
+  );
   background-size: 400% 400%;
   color: white;
 
@@ -72,36 +72,32 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
     .title {
       top: 21rem;
       left: 6rem;
-    overflow: hidden;
-      &::after
-      {
+      overflow: hidden;
+      &::after {
         content: "Developer";
-        color:#5d00ff;
+        color: #5d00ff;
         display: inline-block;
         position: relative;
         left: 2rem;
         animation: textAnimation 7s steps(15) infinite;
         width: 0ch;
       }
-      &::before
-      {
+      &::before {
         display: inline-block;
         content: "";
-        width:2px;
+        width: 2px;
         height: 100%;
         background: rgb(255, 255, 255);
         position: absolute;
         right: 2px;
-        animation: blinking .4s linear alternate infinite;
+        animation: blinking 0.4s linear alternate infinite;
       }
-    
     }
-     .subTxt
-     {
+    .subTxt {
       position: relative;
       left: 2rem;
-       color: var(--page_name_tx);
-     }
+      color: var(--page_name_tx);
+    }
   }
 }
 .hire_btn {
@@ -188,7 +184,6 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
   }
 }
 
-
 @keyframes textAnimation {
   25% {
     content: "Developer";
@@ -206,20 +201,43 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
   }
 }
 @keyframes blinking {
-  100%{
-   opacity: 0;
+  100% {
+    opacity: 0;
   }
 }
 
-//!MEDIA QUERIES 
-@media screen and (max-width:481px) {
-  .home{
-    width: 68rem;
-    height: 40rem;
+//!MEDIA QUERIES
+@media screen and (max-width: 576px) {
+  .home {
+    .txt {
+      font-size: 3rem !important;
+    }
+    .greet {
+      left: 3rem !important;
+      top: 8rem !important;
+    }
+    .name {
+      left: 3rem !important;
+      top: 13rem !important;
 
-    .social
+      &:nth-child(1) {
+        top: 0 !important;
+      }
+    }
+    .title {
+      left: 3rem !important;
+      top: 18rem !important;
+    }
+
+    .social {
+      left: 26rem !important;
+      top: 20rem !important;
+      transform: scale(0.5);
+    }
+    .home_compo
     {
-      left: 62rem;
+      width: 0;
+      height: 0;
     }
   }
 }

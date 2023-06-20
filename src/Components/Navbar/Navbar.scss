@@ -25,12 +25,12 @@ $c_btn_hvr: linear-gradient(
       color: white;
       font-weight: bold;
       position: relative;
-      top: 0.4em;
+      top: 1rem;
       left: 3rem;
       font-size: 1.5rem;
       cursor: pointer;
     }
-   
+
     .nav-link {
       color: white;
       position: relative;
@@ -41,7 +41,7 @@ $c_btn_hvr: linear-gradient(
 
       ul {
         display: flex;
-        gap: 5rem;
+        gap: 4rem;
         text-decoration: none;
         list-style: none;
 
@@ -57,6 +57,7 @@ $c_btn_hvr: linear-gradient(
       }
     }
   }
+}
   .n-line {
     width: 90%;
     position: absolute;
@@ -65,44 +66,59 @@ $c_btn_hvr: linear-gradient(
     top: 3.5rem;
     left: 3rem;
   }
-}
 
-.c-btn {
-  border: none;
-  width: 100px;
-  height: 30px;
-  background: $c_btn;
-  color: white;
-  font-weight: bold;
-  position: relative;
-  float: right;
-  left: 17rem;
-  bottom: 2rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  .c-btn {
+    border: none;
+    width: 100px;
+    height: 30px;
+    background: $c_btn;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    float: right;
+    left: 17rem;
+    bottom: 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
-  &:hover {
-    background: $c_btn_hvr;
-    color: var(--page_name_tx);
+    &:hover {
+      background: $c_btn_hvr;
+      color: var(--page_name_tx);
+    }
   }
-}
 
-.t-btn {
-  position: absolute;
-  left: -19rem;
-  // visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  .t-btn {
+    position: absolute;
+    left: 3rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+  //!MEDIA QUERIES
+  @media screen and (max-width: 481px) {
+    .navbar
+    {
+      width: 30rem !important;
+      position: fixed !important;
   
-}
-//!MEDIA QUERIES 
-@media screen and (max-width: 481px)  {
-  .nav-txt
-  {
+    }
+    .nav-txt {
+      left: 20rem !important;
+      font-size: 1.3rem !important;
+      visibility: hidden;
+    }
+    .c-btn
+    {
+      visibility: hidden;
+    }
+    .n-line {
+      width: 30rem !important;
+      left: 0rem !important;
+    }
+    .nav-link
+    {
+      left: -3.5rem !important;
+    }
 
   }
-  .t-btn{
-   opacity: 1;
-  }
-}
+
