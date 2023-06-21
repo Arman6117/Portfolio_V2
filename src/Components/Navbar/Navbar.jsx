@@ -1,17 +1,44 @@
 import React from "react";
 import { Link } from "react-scroll/modules";
 import "./Navbar.scss";
+import Toggle from "./Toggle/Toggle";
 
 const Navbar = () => {
+  const handleClick = (event) => {
+  
+    const isClass = document.querySelector(".collapse").classList.contains("active")
+  switch(isClass)
+  {
+    case true:
+   
+      document.querySelector(".collapse").classList.remove("active")
+      break;
+    case false:
+     
+      document.querySelector(".collapse").classList.add("active")
+      break;
+      default:
+  }
+  }
+  
+  
+  
+ 
   return (
     <>
       <div className="navbar">
-        <div className="nav-cnt">
-          <div className="nav-txt">Arman Patel</div>
-
+        {/* <div className="nav-cnt"> */}
+        <div className="nav-txt">Arman Patel</div>
+        <div className="t-btn">
+          <label for="check">
+            <input type="checkbox" id="check"  onClick={handleClick}/>
+            <span className="span"></span>
+            <span className="span"></span>
+            <span className="span"></span>
+          </label>
+        </div>
+        <div className="collapse">
           <div className="nav-link">
-         
-
             <ul>
               <Link
                 spy={true}

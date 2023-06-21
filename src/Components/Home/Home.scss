@@ -161,22 +161,22 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
   }
 }
 
-.gradient {
-  position: absolute;
-  --size: 450px;
-  --speed: 50s;
-  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+// .gradient {
+//   position: absolute;
+//   --size: 450px;
+//   --speed: 50s;
+//   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
 
-  width: var(--size);
-  height: var(--size);
-  filter: blur(calc(var(--size) / 6));
-  background-image: linear-gradient(
-    hsla(265, 97%, 49%, 0.323),
-    hsla(271, 100%, 50%, 0.317)
-  );
-  animation: rotate var(--speed) var(--easing) alternate infinite;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-}
+//   width: var(--size);
+//   height: var(--size);
+//   filter: blur(calc(var(--size) / 6));
+//   background-image: linear-gradient(
+//     hsla(265, 97%, 49%, 0.323),
+//     hsla(271, 100%, 50%, 0.317)
+//   );
+//   animation: rotate var(--speed) var(--easing) alternate infinite;
+//   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+// }
 
 @media (min-width: 720px) {
   .gradient {
@@ -207,7 +207,7 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
 }
 
 //!MEDIA QUERIES
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 481px) {
   .home {
     .txt {
       font-size: 3rem !important;
@@ -238,6 +238,16 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
     {
       width: 0;
       height: 0;
+    }
+    .hire_btn
+    {
+      width: 7rem;
+      top: 23rem;
+      left: 3rem;
+    }
+    .gradient 
+    {
+      visibility: hidden;
     }
   }
 }

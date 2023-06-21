@@ -18,107 +18,147 @@ $c_btn_hvr: linear-gradient(
   position: fixed;
   z-index: 1;
   backdrop-filter: blur(12px);
-  .nav-cnt {
-    display: flex;
 
-    .nav-txt {
-      color: white;
-      font-weight: bold;
-      position: relative;
-      top: 1rem;
-      left: 3rem;
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
+  display: flex;
 
-    .nav-link {
-      color: white;
-      position: relative;
-      left: 12rem;
-      font-size: 14px;
-      font-weight: bold;
-      top: 5px;
+  .nav-txt {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 1rem;
+    left: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 
-      ul {
-        display: flex;
-        gap: 4rem;
+  .nav-link {
+    color: white;
+    position: absolute;
+    left: 22rem;
+    font-size: 14px;
+    font-weight: bold;
+    top: 5px;
+
+    ul {
+      display: flex;
+      gap: 4rem;
+      text-decoration: none;
+      list-style: none;
+
+      a {
+        color: white;
         text-decoration: none;
-        list-style: none;
+        transition: all 0.3s ease-in-out;
 
-        a {
-          color: white;
-          text-decoration: none;
-          transition: all 0.3s ease-in-out;
-
-          &:hover {
-            text-decoration: underline;
-          }
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
   }
 }
-  .n-line {
-    width: 90%;
-    position: absolute;
-    height: 1px;
-    background: white;
-    top: 3.5rem;
-    left: 3rem;
-  }
 
-  .c-btn {
-    border: none;
-    width: 100px;
-    height: 30px;
-    background: $c_btn;
-    color: white;
-    font-weight: bold;
-    position: relative;
-    float: right;
-    left: 17rem;
-    bottom: 2rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+.n-line {
+  width: 90%;
+  position: absolute;
+  height: 1px;
+  background: rgb(149, 0, 255);
+  top: 3.5rem;
+  left: 3rem;
+}
 
-    &:hover {
-      background: $c_btn_hvr;
-      color: var(--page_name_tx);
-    }
-  }
+.c-btn {
+  border: none;
+  width: 100px;
+  height: 30px;
+  background: $c_btn;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  float: right;
+  left: 17rem;
+  bottom: 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
-  .t-btn {
-    position: absolute;
-    left: 3rem;
-    opacity: 0;
-    pointer-events: none;
+  &:hover {
+    background: $c_btn_hvr;
+    color: var(--page_name_tx);
   }
-  //!MEDIA QUERIES
-  @media screen and (max-width: 481px) {
-    .navbar
-    {
-      width: 30rem !important;
-      position: fixed !important;
+}
+
+.t-btn {
+  position: absolute;
+  left: 0rem;
+  opacity: 0;
+  pointer-events: none;
   
-    }
-    .nav-txt {
-      left: 20rem !important;
-      font-size: 1.3rem !important;
-      visibility: hidden;
-    }
-    .c-btn
-    {
-      visibility: hidden;
-    }
-    .n-line {
-      width: 30rem !important;
-      left: 0rem !important;
-    }
-    .nav-link
-    {
-      left: -3.5rem !important;
-    }
-
+}
+//!MEDIA QUERIES
+@media screen and (max-width: 481px) {
+  .navbar {
+    width: 100vw !important;
+    backdrop-filter: none;
+    position: fixed !important;
+    // background: rgb(4, 0, 255);
   }
+  .t-btn {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 4;
+  }
+  .collapse {
+    width: 100vw !important;
+    height: 100vh !important;
+    // /* background-color: red; */
+    left: 0rem;
+    position: absolute !important;
+    z-index: 3;
+    backdrop-filter: blur(12px) !important ;
+  //  visibility: hidden;
+   pointer-events: none;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+  }
+  .active
+  {
+  
+    opacity: 1;
+   pointer-events: all;
+  }
+  .nav-txt {
+    left: 20rem !important;
+    font-size: 1.3rem !important;
+    visibility: hidden;
+  }
+  .c-btn {
+   
+    background: #78484800;
+    left: -.2rem !important;
+    top: 2rem !important;
+    font-size: 24px !important;
+    cursor: pointer;
+    &:hover {
+      background: none !important;
+      color: white;
+      
+    }
+  }
+  .n-line {
+    width: 100vw !important;
+    left: 0rem !important;
+  }
+  .nav-link {
+    left: 6rem !important;
+    font-size: 24px !important;
+    top: 5rem !important;
+    ul
+    {
+      gap: 4rem !important;
+    transition: all .4s ease-in-out;
 
+      flex-direction: column !important;
+    }
+  }
+}
