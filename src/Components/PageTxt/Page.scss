@@ -35,3 +35,30 @@
   top: 17rem;
   left: 6rem;
 }
+
+@media screen and (max-width: 576px)
+{
+  .title
+  {
+    font-size: 13vw !important;
+    top: 6vh;
+    left: 7vw;
+  }
+  .desc-1
+  {
+    font-size: 4vw !important;
+    top: 12vh;
+    left: 7vw;
+  }
+  .desc-2
+{
+  @extend .desc-1;
+  top: 16vh;
+}
+  .line
+  {
+    width: 60vw;
+    top: 22vh;
+    left: 7vw;
+  }
+}

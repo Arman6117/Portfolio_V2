@@ -30,17 +30,18 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
 
 .home {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  // background: $landing_page_bg;
-  background: linear-gradient(
-    192.07deg,
-    #000000 23.53%,
-    #08010c 39.56%,
-    #0a000f 74.94%,
-    #000000 117.21%,
-    #000000 117.21%
-  );
+  overflow: hidden;
+  background: red;
+  // background: linear-gradient(
+  //   192.07deg,
+  //   #000000 23.53%,
+  //   #08010c 39.56%,
+  //   #0a000f 74.94%,
+  //   #000000 117.21%,
+  //   #000000 117.21%
+  // );
   background-size: 400% 400%;
   color: white;
 
@@ -207,46 +208,64 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
 }
 
 //!MEDIA QUERIES
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 576px) {
   .home {
     .txt {
-      font-size: 3rem !important;
+      font-size: 17vw !important;
+      // font-size: 3.5rem !important;
     }
     .greet {
       left: 3rem !important;
-      top: 8rem !important;
+      top: 7rem !important;
     }
     .name {
       left: 3rem !important;
-      top: 13rem !important;
+      top: 15rem !important;
 
       &:nth-child(1) {
-        top: 0 !important;
+        top: 5rem !important;
+        left: -26vw !important;
       }
     }
     .title {
       left: 3rem !important;
-      top: 18rem !important;
+      top: 28rem !important;
+      height: 24vh !important;
+
+      &::after {
+        left: -37vw !important;
+        top: 10vh;
+        animation: none !important;
+        width:5ch !important;
+      }
+      &::before {
+       
+      visibility: hidden;
+      }
     }
 
     .social {
-      left: 26rem !important;
-      top: 20rem !important;
-      transform: scale(0.5);
+      left: 80vw !important;
+      top: 75vh !important;
+      transform: scale(0.8);
     }
-    .home_compo
-    {
-      width: 0;
-      height: 0;
+    .home_compo {
+     visibility: hidden !important;
+     overflow: hidden !important;
+     width: 0;
+     height: 0;
+     .home_compo2
+     {
+      visibility: hidden;
+     }
     }
-    .hire_btn
-    {
-      width: 7rem;
-      top: 23rem;
+    .hire_btn {
+      // width: 7rem;
+      width: 27vw;
+      top:  86vh ;
       left: 3rem;
     }
-    .gradient 
-    {
+    .gradient {
       visibility: hidden;
     }
   }

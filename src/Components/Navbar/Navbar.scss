@@ -17,10 +17,10 @@ $c_btn_hvr: linear-gradient(
   height: 3.5em;
   position: fixed;
   z-index: 1;
-  backdrop-filter: blur(12px);
 
   display: flex;
 
+  
   .nav-txt {
     color: white;
     font-weight: bold;
@@ -57,12 +57,17 @@ $c_btn_hvr: linear-gradient(
     }
   }
 }
+.blur
+  {
+  backdrop-filter: blur(12px);
+
+  }
 
 .n-line {
   width: 90%;
   position: absolute;
   height: 1px;
-  background: rgb(149, 0, 255);
+  background: rgb(255, 255, 255);
   top: 3.5rem;
   left: 3rem;
 }
@@ -93,15 +98,15 @@ $c_btn_hvr: linear-gradient(
   left: 0rem;
   opacity: 0;
   pointer-events: none;
-  
 }
 //!MEDIA QUERIES
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 576px) {
   .navbar {
     width: 100vw !important;
-    backdrop-filter: none;
+    // backdrop-filter: none !important ;
     position: fixed !important;
-    // background: rgb(4, 0, 255);
+    z-index: 5;
+   
   }
   .t-btn {
     opacity: 1;
@@ -109,23 +114,21 @@ $c_btn_hvr: linear-gradient(
     z-index: 4;
   }
   .collapse {
+    // position: fixed !important;
     width: 100vw !important;
     height: 100vh !important;
-    // /* background-color: red; */
     left: 0rem;
     position: absolute !important;
     z-index: 3;
     backdrop-filter: blur(12px) !important ;
-  //  visibility: hidden;
-   pointer-events: none;
+
+    pointer-events: none;
     opacity: 0;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
-  .active
-  {
-  
+  .active {
     opacity: 1;
-   pointer-events: all;
+    pointer-events: all;
   }
   .nav-txt {
     left: 20rem !important;
@@ -133,16 +136,14 @@ $c_btn_hvr: linear-gradient(
     visibility: hidden;
   }
   .c-btn {
-   
     background: #78484800;
-    left: -.2rem !important;
+    left: -0.2rem !important;
     top: 2rem !important;
     font-size: 24px !important;
     cursor: pointer;
     &:hover {
       background: none !important;
       color: white;
-      
     }
   }
   .n-line {
@@ -150,13 +151,14 @@ $c_btn_hvr: linear-gradient(
     left: 0rem !important;
   }
   .nav-link {
-    left: 6rem !important;
+    left: 35vw !important;
     font-size: 24px !important;
     top: 5rem !important;
-    ul
-    {
+    text-align: center;
+    ul {
+      padding: 0 !important;
       gap: 4rem !important;
-    transition: all .4s ease-in-out;
+      transition: all 0.4s ease-in-out;
 
       flex-direction: column !important;
     }

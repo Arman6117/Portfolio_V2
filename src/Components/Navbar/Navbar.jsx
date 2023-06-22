@@ -7,13 +7,15 @@ const Navbar = () => {
   const handleClick = (event) => {
   
     const isClass = document.querySelector(".collapse").classList.contains("active")
+  
   switch(isClass)
   {
     case true:
-   
+      document.querySelector(".navbar").classList.add("blur")
       document.querySelector(".collapse").classList.remove("active")
       break;
     case false:
+      document.querySelector(".navbar").classList.remove("blur")
      
       document.querySelector(".collapse").classList.add("active")
       break;
@@ -26,7 +28,7 @@ const Navbar = () => {
  
   return (
     <>
-      <div className="navbar">
+      <div className="navbar blur">
         {/* <div className="nav-cnt"> */}
         <div className="nav-txt">Arman Patel</div>
         <div className="t-btn">
