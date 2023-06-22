@@ -24,8 +24,6 @@ $skills_div_express_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   &:hover {
     opacity: 1;
     box-shadow: $skills_div_express_sh;
-   
-    
   }
 }
 .svg-Ex {
@@ -140,13 +138,11 @@ $skills_div_express_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
     animation: Ex-1 5s steps(100) infinite;
   }
 }
-.experience
-{
+.experience {
   @extend .knowledge;
   left: 110px;
-  .second-Ex
-  {
-    animation:  Ex-2 5s steps(100) infinite;;
+  .second-Ex {
+    animation: Ex-2 5s steps(100) infinite;
   }
 }
 
@@ -167,3 +163,17 @@ $skills_div_express_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   }
 }
 
+//!MEDIA QUERIES
+@media screen and (max-width: 576px) {
+  .Ex {
+    width: 46px;
+    height: 46px;
+    left: 9vw;
+    top: 90vh;
+  }
+  .skills-info-Ex {
+    left: 15vw;
+    top: 79vh;
+    transform: scale(0.6);
+  }
+}

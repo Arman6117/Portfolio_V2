@@ -23,15 +23,13 @@ $skills_div_js_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   &:hover {
     opacity: 1;
     box-shadow: $skills_div_js_sh;
-   
-    
   }
 }
 .svg-j {
   transform: scale(0.6);
   position: relative;
-    top: 1.2rem;
-    left: 10px;
+  top: 1.2rem;
+  left: 10px;
 }
 
 .skills-info-j {
@@ -42,7 +40,7 @@ $skills_div_js_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   opacity: 0;
   position: absolute;
   text-align: center;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: 1;
   top: 15rem;
   left: 6rem;
@@ -142,13 +140,11 @@ $skills_div_js_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
     animation: js-1 5s steps(100) infinite;
   }
 }
-.experience
-{
+.experience {
   @extend .knowledge;
   left: 110px;
-  .second-j
-  {
-    animation:  js-2 5s steps(100) infinite;;
+  .second-j {
+    animation: js-2 5s steps(100) infinite;
   }
 }
 
@@ -169,3 +165,23 @@ $skills_div_js_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   }
 }
 
+//!MEDIA QUERIES
+@media screen and (max-width: 576px) {
+  .JS {
+    width: 80px;
+    height: 80px;
+    left: 64vw;
+    top: 53vh;
+  }
+  .skills-info-j {
+    left: 12vw;
+    top: 45vh;
+    transform: scale(0.7);
+  }
+  .svg-j {
+    transform: scale(0.5);
+    position: relative;
+    top: 0rem;
+    left: 1px;
+  }
+}

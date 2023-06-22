@@ -6,7 +6,7 @@ $skills_div_bg: linear-gradient(
 );
 
 $skills_div_css_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
-3px -4px 78px -9px #5d00ff, inset 1px 10px 42px 9px rgba(21, 114, 182, 0.5);
+  3px -4px 78px -9px #5d00ff, inset 1px 10px 42px 9px rgba(21, 114, 182, 0.5);
 .CSS {
   width: 120px;
   height: 120px;
@@ -23,8 +23,6 @@ $skills_div_css_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   &:hover {
     opacity: 1;
     box-shadow: $skills_div_css_sh;
-   
-    
   }
 }
 .svg-c {
@@ -39,7 +37,7 @@ $skills_div_css_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   opacity: 0;
   position: absolute;
   text-align: center;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: 1;
   top: 19rem;
   left: 35rem;
@@ -139,13 +137,11 @@ $skills_div_css_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
     animation: html-1 5s steps(100) infinite;
   }
 }
-.experience
-{
+.experience {
   @extend .knowledge;
   left: 110px;
-  .second-h
-  {
-    animation:  html-2 5s steps(100) infinite;;
+  .second-h {
+    animation: html-2 5s steps(100) infinite;
   }
 }
 
@@ -163,5 +159,20 @@ $skills_div_css_sh: 0px -1px 73px rgba(53, 18, 114, 0.47),
   }
   100% {
     transform: translateY(-140%) rotate(600deg) scale(1.6);
+  }
+}
+
+//!MEDIA QUERIES
+@media screen and (max-width: 576px) {
+  .CSS {
+    width: 60px;
+    height: 60px;
+    left: 56vw;
+    top: 39vh;
+  }
+  .skills-info-c {
+    left: 6vw;
+    top: 30vh;
+    transform: scale(0.7)
   }
 }
