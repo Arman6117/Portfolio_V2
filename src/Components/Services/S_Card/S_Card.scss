@@ -2,7 +2,7 @@
 {
     background: rgba(255, 255, 255, 0);
     .s-content{
-        padding: 0px 146px 0px 145px;
+        // padding: 0px 146px 0px 145px;
     }
 
     img
@@ -14,12 +14,46 @@
 }
 p
 {
-    color: white;
+color: white;
     font-weight: 600;
     position: absolute;
-    top: 9rem;
+    top: 12rem;
     left: -126px;
     padding: 0px 72px 1px 228px;
-    font-size: 18px;
+    font-size: 14px;
 }
+h3
+{
+   color: #fff;
+    position: absolute;
+    top: 17vh;
+    left: 14vw;
+
+}
+}
+
+@media screen and (max-width: 576px)
+{
+  .s_card
+  {
+    p
+    {
+        visibility: hidden;
+    }
+    img
+    {
+        transform: scale(0.17);
+        left: -5em;
+    }
+    h3
+    {
+       
+        top: 17vh;
+        left: 0vw;
+        font-size: 7vw;
+        padding: 36px;
+       
+    
+    }
+  }
 }

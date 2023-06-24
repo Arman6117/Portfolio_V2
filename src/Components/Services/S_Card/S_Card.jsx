@@ -7,6 +7,7 @@ const SCard = (props) => {
     <div className='s_card'>
         <div className='s-content'>
             <img src={props.img}  />
+            <h3>{props.title}</h3>
             <p> {props.detail}</p>
         </div>
     </div>

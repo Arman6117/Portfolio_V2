@@ -1,7 +1,12 @@
 .contact {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(6.01deg, #20004a 13.98%, #1a0037  45.92%, #060009 90.31%);;
+  background: linear-gradient(
+    6.01deg,
+    #20004a 13.98%,
+    #1a0037 45.92%,
+    #060009 90.31%
+  );
   .c_content {
     display: flex;
 
@@ -59,4 +64,31 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 576px) {
+  .sm-inputs {
+    top: 34vh !important;
+    left: 0 !important;
+  }
+  .name {
+    width: 65vw !important;
+    left: 16vw !important;
+    
+  }
+  .email
+    {
+      @extend .name
+    }
+  .message
+    {
+
+      width: 75vw !important;
+      left: 11vw !important;
+    }
+    .sm-button
+    {
+      left: 37vw !important;
+    top: 37vh !important;
+    }
 }
