@@ -33,15 +33,15 @@ $l_page_html_tx: rgba(95, 0, 169, 0.48);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: red;
-  // background: linear-gradient(
-  //   192.07deg,
-  //   #000000 23.53%,
-  //   #08010c 39.56%,
-  //   #0a000f 74.94%,
-  //   #000000 117.21%,
-  //   #000000 117.21%
-  // );
+
+  background: linear-gradient(
+    192.07deg,
+    #000000 23.53%,
+    #08010c 39.56%,
+    #0a000f 74.94%,
+    #000000 117.21%,
+    #000000 117.21%
+  );
   background-size: 400% 400%;
   color: white;
 

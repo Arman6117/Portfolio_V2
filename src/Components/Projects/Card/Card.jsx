@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Taskee from '../../../images/Projects/Taskee.png'
 import "./Card.scss";
-import { typeWrite } from "./Typing.js";
+
 
 //!IMAGES!\\
 
